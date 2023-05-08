@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="/src/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>타입스크립트와 DDD로 게시판만들기</title>
+  </head>
+  <body>
+    <header>게시판</header>
+    <div class="mainPage">
+      <h2>글 목록</h2>
+      <button id="postWriteBtn">작성</button>
+      <table class="postList">
+        <caption></caption>
+        <thead>
+          <tr>
+            <th>번호</th>
+            <th>이름</th>
+            <th>작성자</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <div class="detailPage">
+      <h2>글 상세</h2>
+      <button id="mainPageBtn">메인으로</button>
+      <div class="postDetail">
+        <div>제목: <span id="postTitle"></span></div>
+        <br />
+        <div>
+          작성자:
+          <span id="postWriter"></span>
+        </div>
+        <br />
+        <div>내용:<span id="postContent"></span></div>
+        <br />
+      </div>
+    </div>
+    <div class="writePage">
+      <h2>글 작성</h2>
+      <label>
+        제목
+        <input id="postTitleInput" />
+      </label>
+      <label
+        >본문
+        <textarea id="postContentInput"></textarea>
+      </label>
+      <button id="postSaveBtn">저장</button>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

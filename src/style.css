@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: aquamarine;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.mainPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.detailPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.writePage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.postDetail {
+  margin: 20px;
+}
